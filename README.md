@@ -26,6 +26,7 @@ Repository: `esp32-sensors-mqtt-tft-epaper-elsie`
 - `26_mqtt` ～ `27_mqtt_ctrl`：MQTT 感測資料與控制
 - `28_ili9225` ～ `35_ili_mqtt_ctrl_page`：ILI9225 TFT 與網頁控制整合
 - `36_epaper` ～ `38_mqtt_ctrl_page_epaper`：電子紙顯示與 MQTT / 網頁控制
+- `36_epaper-1`：將指定的中秋節圖片轉換為黑／白／紅三色電子紙影像並靜態顯示
 - `libraries/`：本專案使用的 Arduino 函式庫
 - `epaper_resources/`：電子紙模組的參考資料
 
