@@ -1,0 +1,29 @@
+# Arduino / ESP32 generated build output
+**/build/
+**/build*/
+*.elf
+*.map
+*.o
+*.a
+*.bin
+*.hex
+compile_commands.json
+debug_custom.json
+build.options.json
+
+# Local IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local reports, temporary renderings, and photos
+*.docx
+tmp_report_0914/
+成果照片/
+*.jpg
+*.jpeg
+*.png
+
+# Local handoff / scratch files
+handoff.md
