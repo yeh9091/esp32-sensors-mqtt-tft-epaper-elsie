@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ESP32 感測器、MQTT、TFT 與電子紙整合專案展示網站">
+  <title>ESP32 IoT Lab｜Sensors · MQTT · TFT · E-Paper</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav shell">
+      <a class="brand" href="#top">ESP32 IoT Lab</a>
+      <div class="nav-links">
+        <a href="#journey">學習歷程</a>
+        <a href="#system">系統架構</a>
+        <a href="#gallery">成果照片</a>
+        <a href="#reports">報告</a>
+        <a class="nav-cta" href="https://github.com/yeh9091/esp32-sensors-mqtt-tft-epaper-elsie">GitHub ↗</a>
+      </div>
+    </nav>
+    <div class="hero-content shell" id="top">
+      <p class="eyebrow">ESP32 × ARDUINO × CONNECTED DEVICES</p>
+      <h1>把感測資料<br><span>變成看得見的體驗。</span></h1>
+      <p class="hero-copy">從 GPIO 與 LED 練習出發，逐步整合 DHT11、光線、PM2.5、MQTT、TFT 與 2.9 吋電子紙，打造可觀測、可控制、可延伸的 IoT 學習作品。</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#gallery">查看實作成果</a>
+        <a class="button ghost" href="https://github.com/yeh9091/esp32-sensors-mqtt-tft-epaper-elsie">瀏覽完整程式碼</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>38</strong><span>個學習與整合範例</span></div>
+        <div><strong>4</strong><span>種主要顯示／傳輸介面</span></div>
+        <div><strong>1</strong><span>個持續迭代的專案</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section shell" id="journey">
+      <div class="section-heading">
+        <p class="eyebrow">LEARNING JOURNEY</p>
+        <h2>由小到大，讓每個範例成為下一步的基礎。</h2>
+        <p>這不是單一成品，而是一條從基礎硬體控制、感測、聯網到多端呈現的實作路徑。</p>
+      </div>
+      <div class="journey-grid">
+        <article class="journey-card"><span class="number">01</span><h3>感測與控制</h3><p>GPIO、LED、按鍵、蜂鳴器、超音波與 DHT11，建立 ESP32 的基本功。</p><code>01_hello → 18_SONIC_OLED</code></article>
+        <article class="journey-card accent"><span class="number">02</span><h3>資料與服務</h3><p>讀取空氣品質與氣象資料，串接 ThingSpeak、Google Sheets 與 LINE 通知。</p><code>19_PM25 → 25_dht_line</code></article>
+        <article class="journey-card"><span class="number">03</span><h3>聯網與視覺化</h3><p>以 MQTT 傳遞感測資料，搭配 TFT、網頁控制與電子紙完成整合展示。</p><code>26_mqtt → 38_mqtt_ctrl_page_epaper</code></article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="system">
+      <div class="shell split">
+        <div class="section-heading">
+          <p class="eyebrow">SYSTEM SNAPSHOT</p>
+          <h2>感測、傳輸、顯示與控制，連成一個循環。</h2>
+          <p>ESP32 蒐集環境資料後，可透過 MQTT 發布到服務端，再由 OLED、TFT、電子紙或網頁控制介面呈現與互動。</p>
+          <ul class="feature-list">
+            <li><span>01</span>ESP32 讀取溫濕度、光線與空氣品質</li>
+            <li><span>02</span>Wi-Fi 與 MQTT 傳送／接收資料</li>
+            <li><span>03</span>OLED、TFT、電子紙同步呈現</li>
+            <li><span>04</span>網頁與通知服務提供遠端操作</li>
+          </ul>
+        </div>
+        <figure class="diagram-frame">
+          <img src="showcase-assets/diagrams/architecture.png" alt="ESP32 IoT 系統架構圖" loading="lazy">
+          <figcaption>系統架構示意</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section shell" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">THE RESULTS</p>
+        <h2>把實作留下來，讓成果可以被看見。</h2>
+        <p>以下收錄本專案的硬體、顯示畫面與整合測試成果。</p>
+      </div>
+      <div class="highlight-grid">
+        <figure class="highlight large"><img src="showcase-assets/diagrams/full-system-result.png" alt="完整系統成果" loading="lazy"><figcaption>完整系統成果</figcaption></figure>
+        <figure class="highlight"><img src="showcase-assets/diagrams/hardware-result.jpg" alt="硬體成果" loading="lazy"><figcaption>硬體配置</figcaption></figure>
+        <figure class="highlight"><img src="showcase-assets/diagrams/software-result.jpg" alt="軟體與畫面成果" loading="lazy"><figcaption>軟體畫面</figcaption></figure>
+      </div>
+      <div class="gallery-grid">
+        <figure><img src="showcase-assets/gallery/photo-01.jpg" alt="成果照片 01" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-02.jpg" alt="成果照片 02" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-03.jpg" alt="成果照片 03" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-04.jpg" alt="成果照片 04" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-05.jpg" alt="成果照片 05" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-06.jpg" alt="成果照片 06" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-07.jpg" alt="成果照片 07" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-08.jpg" alt="成果照片 08" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-09.png" alt="成果照片 09" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-10.png" alt="成果照片 10" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-11.jpg" alt="成果照片 11" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-12.jpg" alt="成果照片 12" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-13.jpg" alt="成果照片 13" loading="lazy"></figure>
+        <figure><img src="showcase-assets/gallery/photo-14.jpg" alt="成果照片 14" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section report-section" id="reports">
+      <div class="shell report-layout">
+        <div class="section-heading">
+          <p class="eyebrow">DOCUMENTATION</p>
+          <h2>報告與完整原始碼，一起公開。</h2>
+          <p>報告保留實作過程與成果紀錄；GitHub repository 則提供所有範例程式與函式庫整理。</p>
+          <a class="button primary" href="https://github.com/yeh9091/esp32-sensors-mqtt-tft-epaper-elsie">前往 GitHub repository ↗</a>
+        </div>
+        <div class="report-list">
+          <a class="report-card" href="showcase-assets/reports/report-0810.docx"><span class="report-icon">DOCX</span><span><strong>0810 IOT 成果報告</strong><small>早期整合成果與學習紀錄</small></span><b>↓</b></a>
+          <a class="report-card" href="showcase-assets/reports/report-0914.docx"><span class="report-icon">DOCX</span><span><strong>0914 IOT 成果報告</strong><small>最新階段成果與系統展示</small></span><b>↓</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner"><span>ESP32 IoT Lab · Elsie</span><span>Built with Arduino, curiosity &amp; iteration.</span></div>
+  </footer>
+</body>
+</html>

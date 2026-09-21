@@ -6,6 +6,12 @@ MQTT、ThingSpeak、Google Sheets、LINE 通知，以及 2.9 吋電子紙顯示�
 
 Repository: `esp32-sensors-mqtt-tft-epaper-elsie`
 
+## 專案展示網站
+
+- GitHub Pages：<https://yeh9091.github.io/esp32-sensors-mqtt-tft-epaper-elsie/>
+- 網站原始檔：[`index.html`](index.html)、[`site.css`](site.css)
+- 成果照片、架構圖與報告：[`showcase-assets/`](showcase-assets/)
+
 ## 專案內容
 
 專案根目錄中的範例依學習與整合階段編號：
@@ -78,8 +84,9 @@ Repository: `esp32-sensors-mqtt-tft-epaper-elsie`
 
 - 本 repository 主要是課程與實作範例，不保證所有範例可直接在所有 ESP32
   板型與函式庫版本上編譯。
-- `build/`、編譯產物、報告文件與照片不納入版本控制，以避免 repository
-  過大並保持原始碼清楚。
+- 編譯產物與暫存報告渲染檔不納入版本控制，以避免 repository 過大。
+- `showcase-assets/` 內的精選成果照片、架構圖與兩份成果報告會公開展示；
+  請確認文件內容不含不宜公開的個人資料或機密資訊。
 - 使用第三方函式庫時，請遵守各函式庫原本的授權條款。
 
 ## License

@@ -17,13 +17,24 @@ build.options.json
 .DS_Store
 Thumbs.db
 
-# Local reports, temporary renderings, and photos
+# Local reports, temporary renderings, and source photos
 *.docx
 tmp_report_0914/
 成果照片/
 *.jpg
 *.jpeg
 *.png
+
+# Public showcase assets intentionally included in the repository
+!0810 IOT成果報告.docx
+!0914 IOT成果報告.docx
+!showcase-assets/
+!showcase-assets/**
+
+# Keep the original root copies local; the renamed public copies live below
+# showcase-assets/reports/.
+0810 IOT成果報告.docx
+0914 IOT成果報告.docx
 
 # Local handoff / scratch files
 handoff.md
