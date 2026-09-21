@@ -1,6 +1,7 @@
 # Arduino / ESP32 generated build output
 **/build/
 **/build*/
+.arduino-build/
 *.elf
 *.map
 *.o
